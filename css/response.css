@@ -1,0 +1,44 @@
+@media(max-width: 768px){
+    nav {
+        width: 100%;
+    }
+    nav ul{
+        display: none !important;
+    }
+    
+    .home,.project,.about,.contact,.city{
+        height: auto;
+    }    
+
+    .project .houses{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .content-about{
+        flex-wrap: wrap;
+    }
+
+    .content-about .item{
+        width: 45%;
+    }
+}
+@media(max-width: 320px){
+    nav ul{
+        display: none !important;        
+    }
+
+    .content-about .item{
+        width: 100%;
+    }
+
+    .project .houses{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+    }
+
+    .s2{
+        display: none;
+    }
+
+}
